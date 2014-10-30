@@ -68,6 +68,12 @@
 
 	}
 
+	hr {
+
+		background: lighten(#9DE0AD,20%);
+
+	}
+
 	header {
 
 		text-align: center;
@@ -131,6 +137,14 @@
 
 	}
 
+	[interstitial] {
+
+		margin-left: 0;
+		margin-right: 0;
+		padding: 1.25em 1.5em;
+
+	}
+
 	.wrap {
 
 		padding: 1em;
@@ -166,6 +180,13 @@
 
 		margin-left: 0;
 		margin-right: 0;
+
+	}
+
+	[home-events], [events] {
+
+		margin-left: -1.5em;
+		margin-right: -1.5em;
 
 	}
 

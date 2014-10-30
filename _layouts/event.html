@@ -34,8 +34,10 @@
 
 			<header>
 
-				<div menu right>
+				<div menu right class="multi">
 					<a href="#menu" class="btn">Menu</a>
+					<a href="{{page.tix_url}}" class="btn">Get tix</a>
+					<a href="mailto:dads.n.shows@gmail.com" class="btn">RSVP</a>
 				</div>
 
 				<h1 data-sub="{{page.num}} dads going.">{{page.title}}</h1>
@@ -47,7 +49,13 @@
 			<div role="main">
 				<div class="width">
 
+					{% include interstitial.html %}
+
 					{{ content }}
+
+					{% include interstitialb.html %}
+
+					<hr />
 
 					{% include footer.html %}
 

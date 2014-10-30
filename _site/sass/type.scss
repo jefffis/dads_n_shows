@@ -20,6 +20,8 @@ h1, h2, h3, h4 {
 
 h1 {
 
+	line-height: 1;
+
 	& + h3 {
 
 		margin-top: -20px;
@@ -80,8 +82,36 @@ hr {
 
 }
 
+[trns] {
 
+	opacity: .5;
 
+}
 
+small + p {
 
+	margin-top: 25px;
+
+}
+
+[interstitial] {
+
+	background: #fefebf;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+	padding: .75em 1em;
+
+}
+
+[mar-top] {
+
+	margin-top: 1.5em;
+
+}
+
+[mar-bot] {
+
+	margin-bottom: 1.5em;
+
+}
 

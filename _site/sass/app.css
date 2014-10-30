@@ -235,6 +235,23 @@ html {
     -ms-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
     padding: .3em .5em; }
+  [menu].multi .btn {
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    float: left;
+    margin-right: -1px; }
+    [menu].multi .btn + .btn {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    [menu].multi .btn:last-child {
+      -moz-border-radius: 0 4px 4px 0;
+      -webkit-border-radius: 0 4px 4px 0;
+      -ms-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0; }
 
 header {
   background: #1F383D;
@@ -424,10 +441,26 @@ nav {
   margin-bottom: 0; }
   [events] span + span {
     border-width: 3px; }
-  [events] a span {
-    color: #999;
-    display: block;
-    font-size: .6em; }
+  [events] a {
+    line-height: 1; }
+    [events] a span {
+      color: #999;
+      display: block;
+      font-size: .6em;
+      padding-top: .5em; }
+
+[home-events] {
+  font-size: 2em;
+  margin-bottom: 0; }
+  [home-events] span + span {
+    border-width: 3px; }
+  [home-events] a {
+    line-height: 1; }
+    [home-events] a span {
+      color: #999;
+      display: block;
+      font-size: .6em;
+      padding-top: .5em; }
 
 [footer] {
   font-size: .8em;
@@ -450,9 +483,11 @@ h1, h2, h3, h4 {
   color: #1F383D;
   line-height: 1.25; }
 
-h1 + h3 {
-  margin-top: -20px;
-  color: #999; }
+h1 {
+  line-height: 1; }
+  h1 + h3 {
+    margin-top: -20px;
+    color: #999; }
 
 a:link {
   color: #45ADA8; }
@@ -502,6 +537,24 @@ hr {
   height: 3px;
   margin: 3.5em -2em; }
 
+[trns] {
+  opacity: .5; }
+
+small + p {
+  margin-top: 25px; }
+
+[interstitial] {
+  background: #fefebf;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+  padding: .75em 1em; }
+
+[mar-top] {
+  margin-top: 1.5em; }
+
+[mar-bot] {
+  margin-bottom: 1.5em; }
+
 @media screen and (max-height: 800px) {
   header {
     max-height: 500px; } }
@@ -536,6 +589,9 @@ hr {
   [center] {
     text-align: center; }
 
+  hr {
+    background: #eaf9ee; }
+
   header {
     text-align: center; }
     header h1 {
@@ -564,6 +620,11 @@ hr {
   [t] {
     display: inline-block !important; }
 
+  [interstitial] {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.25em 1.5em; }
+
   .wrap {
     padding: 1em; }
 
@@ -583,6 +644,10 @@ hr {
   nav {
     margin-left: 0;
     margin-right: 0; }
+
+  [home-events], [events] {
+    margin-left: -1.5em;
+    margin-right: -1.5em; }
 
   [intro] {
     display: block; } }

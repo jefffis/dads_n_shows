@@ -29,6 +29,30 @@ html {
 
 	}
 
+	&.multi {
+
+		.btn {
+
+			@include rounded-corner(4px 0 0 4px);
+			float: left;
+			margin-right: -1px;
+
+			& + .btn {
+
+				@include rounded-corner(0);
+
+			}
+
+			&:last-child {
+
+				@include rounded-corner(0 4px 4px 0);
+
+			}
+
+		}
+
+	}
+
 }
 
 header {
@@ -356,11 +380,46 @@ nav {
 
 	a {
 
+		line-height: 1;
+
 		span {
 
 			color: #999;
 			display: block;
 			font-size: .6em;
+			padding-top: .5em;
+
+		}
+
+	}
+
+}
+
+[home-events] {
+
+	font-size: 2em;
+	margin-bottom: 0;
+
+	span {
+
+		& + span {
+
+			border-width: 3px;
+
+		}
+
+	}
+
+	a {
+
+		line-height: 1;
+
+		span {
+
+			color: #999;
+			display: block;
+			font-size: .6em;
+			padding-top: .5em;
 
 		}
 
