@@ -1,0 +1,5 @@
+name: Dads'n'Shows
+markdown: redcarpet
+highlighter: true
+permalink: /:title
+minify_html: false

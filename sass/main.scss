@@ -1,0 +1,392 @@
+html {
+
+	background: #9DE0AD;
+	color: #594F4F;
+	font: normal 100%/1.5 sans-serif;
+
+}
+
+.wrap {
+
+	@include rounded-corner(4px);
+	overflow: hidden;
+	padding: .625em;
+
+}
+
+[menu] {
+
+	position: absolute;
+	right: 1em;
+	text-align: right;
+	top: 1.25em;
+	z-index: 3;
+
+	.btn:link, .btn:visited {
+	
+		@include box-shadow(0 0 0 2px rgba(0,0,0,0.2));
+		padding: .3em .5em;
+
+	}
+
+}
+
+header {
+
+	background: #1F383D;
+	@include rounded-corner(4px 4px 0 0);
+	//box-shadow: 0 0 0 2px rgba(0,0,0,0.1) inset;
+	height: auto;
+	//margin: 0 auto;
+	//max-width: 1200px;
+	max-height: 700px;
+	overflow: hidden;
+	position: relative;
+
+	h1 {
+
+		color: white;
+		font-size: 2em;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 0;
+		left: 0;
+		padding: 0 .75em;
+		position: absolute;
+		bottom: 10%;
+		width: 100%;
+		z-index: 2;
+
+		&:before {
+
+			//color: #E5FCC2;
+			//content: "\266B";
+			//display: none;
+			//left: -.25em;
+			//opacity: .5;
+			//position: relative;
+			//top: .1em;
+
+		}
+
+		&:after {
+
+			content: "Balancing fatherhood and rocking is tough.";
+			display: none;
+			font-size: 40%;
+			letter-spacing: 0;
+			opacity: .75;
+			padding-top: .5em;
+
+		}
+
+	}
+
+	[no] {
+
+		&:after {
+
+			display: none;
+
+		}
+
+	}
+
+	[data-sub] {
+
+		&:after {
+
+			content: attr(data-sub);
+
+		}
+
+	}
+
+	.lg {
+
+		background: #1F383D;
+		display: block;
+		margin-left: -50%;
+		margin-top: -50%;
+		opacity: .25;
+		position: relative;
+		width: 200%;
+		z-index: 1;
+
+	}
+
+	small {
+
+		bottom: 1.5em;
+		color: #E5FCC2;
+		display: none;
+		//opacity: .75;
+		position: absolute;
+		right: 1.5em;
+		z-index: 2;
+
+		.btn {
+
+			font-size: 60%;
+
+		}
+
+	}
+
+	a:link, a:visited {
+
+		background: #45ADA8;
+		@include rounded-corner(3px);
+		color: white;
+		display: inline-block;
+		margin-left: 3px;
+		padding: 4px 6px;
+		text-decoration: none;
+
+		&:active {
+
+			background: darken(#45ADA8,20%);
+
+		}
+
+	}
+
+}
+
+[logo] {
+
+	color: #1F383D;
+	display: block;
+	font-size: 2em;
+	left: 1em;
+	position: relative;
+	text-align: left;
+	top: 1em;
+	z-index: 2;
+
+}
+
+[role=main] {
+
+	background: white;
+	@include rounded-corner(0 0 4px 4px);
+	overflow: hidden;
+	padding: 1.5em;
+	position: relative;
+
+}
+
+.width {
+
+	max-width: 32.5em;
+	margin: 0 auto;
+
+}
+
+figure {
+	
+	margin-bottom: 1.5em;
+	margin-left: -25%;
+	max-width: 150%;
+	overflow: hidden;
+	width: 150%;
+
+	img {
+
+		@include rounded-corner(3px 0 0 3px);
+		float: left;
+		max-width: 33.3%;
+
+		& + img {
+
+			@include rounded-corner(0);
+
+		}
+
+		&:last-child {
+
+			@include rounded-corner(0 3px 3px 0);
+
+		}
+
+	}
+
+}
+
+form, fieldset {
+
+	border: 0;
+	padding: 0;
+
+}
+
+label {
+
+	display: block;
+
+	span {
+
+		cursor: pointer;
+		display: block;
+		padding-bottom: .25em;
+
+	}
+
+	& + label {
+
+		margin-top: .75em;
+
+	}
+
+}
+
+.r {
+
+	position: relative;
+
+	&:after {
+
+		color: #FA3C16;
+		content: "(req'd)";
+		left: .5em;
+		position: relative;
+
+	}
+
+}
+
+[type=submit] {
+
+	border: 0;
+	margin: 1em 0;
+
+}
+
+[styled] {
+
+	background: white;
+	border: 2px solid #ddd;
+	@include rounded-corner(3px);
+	@include box-shadow(none);
+	display: block;
+	padding: .5em;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	&:focus {
+
+		border-color: #1F383D;
+		z-index: 2;
+
+	}
+
+}
+
+[micro] {
+
+	color: #999;
+	display: block;
+	line-height: 1.2;
+
+}
+
+[intro] {
+
+	display: none;
+
+}
+
+nav {
+
+	//border-top: 2px solid #ddd;
+	//@include rounded-corner(4px);
+	margin: 0 -1.5em 3.5em;
+	overflow: hidden;
+
+	a {
+
+		display: block;
+		padding: .75em 1.5em;
+		text-decoration: none;
+
+		&:hover {
+
+			color: darken(#45ADA8,20%);
+
+		}
+
+		&:active {
+
+			background: #efefef;
+
+		}
+
+	}
+
+	span {
+
+		display: block;
+
+		& + span {
+
+			border-top: 1px solid #efefef;
+
+		}
+
+	}
+
+}
+
+[events] {
+
+	font-size: 2em;
+	margin-bottom: 0;
+
+	span {
+
+		& + span {
+
+			border-width: 3px;
+
+		}
+
+	}
+
+	a {
+
+		span {
+
+			color: #999;
+			display: block;
+			font-size: .6em;
+
+		}
+
+	}
+
+}
+
+[footer] {
+
+	font-size: .8em;
+	margin-bottom: 0;
+	opacity: .5;
+
+}
+
+[m] {
+
+	display: block !important;
+
+}
+[t], [d] {
+
+	display: none !important;
+
+}
+
+
+
+

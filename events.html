@@ -1,0 +1,18 @@
+---
+layout: events
+---
+
+					<nav events>
+						{% for post in site.posts %}
+						<span>
+							<a href="{{post.url}}">
+								{{post.title}}
+								<span>
+									{{post.when}} at {{post.where}}
+								</span>
+							</a>
+						</span>
+						{% endfor %}
+					</nav>
+
+					<hr />

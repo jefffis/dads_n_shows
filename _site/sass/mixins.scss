@@ -1,0 +1,117 @@
+// border-radius
+@mixin rounded-corner($arc) {
+	-moz-border-radius: $arc;
+	-webkit-border-radius: $arc;
+	-ms-border-radius: $arc;
+	border-radius: $arc;
+}
+
+// box-shadow
+@mixin box-shadow($prop) {
+	-moz-box-shadow: $prop;
+	-webkit-box-shadow: $prop;
+	-ms-box-shadow: $prop;
+	box-shadow: $prop;
+}
+
+// linear gradient
+@mixin linear-gradient($fromColor, $toColor) {
+	background-color: $toColor; /* Fallback Color */
+	background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+	background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, $fromColor, $toColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+// rotate
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+// transition
+@mixin transform($prop,$time,$type) {
+	-webkit-transition: $prop $time $type;
+	-moz-transition: $prop $time $type;
+	-ms-transition: $prop $time $type;
+	transition: $prop $time $type;
+}
+
+// filter
+@mixin filter($type,$amt) {
+	-webkit-filter: $type+unquote('(#{$amt})');
+	-moz-filter: $type+unquote('(#{$amt})');
+	-ms-filter: $type+unquote('(#{$amt})');
+	filter: $type+unquote('(#{$amt})');
+}
+
+// animation
+@mixin animation ($delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+// keyframe
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+ 
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+ 
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+ 
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@include keyframe(fadein) {
+	0% {
+		opacity: 0;
+		top: -15%;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@include keyframe(fadeout) {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+
+	100% {
+		opacity: 0;
+		top: -15%;
+	}
+}
