@@ -320,14 +320,12 @@ header {
       background: #286461; }
 
 [logo] {
-  color: #1F383D;
   display: block;
-  font-size: 2em;
-  left: 1em;
-  position: relative;
-  text-align: left;
-  top: 1em;
+  margin: 1em 1em 0;
+  max-width: 75px;
   z-index: 2; }
+  [logo]:active {
+    opacity: .5; }
 
 [role=main] {
   background: white;
@@ -654,6 +652,10 @@ small + p {
   [intro] {
     display: block; } }
 @media screen and (min-width: 1301px) {
+  [logo] {
+    margin-left: 2em;
+    margin-top: 2em; }
+
   .wrap {
     padding: 2em; }
 
