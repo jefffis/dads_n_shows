@@ -181,12 +181,14 @@ header {
 [logo] {
 
 	display: block;
-	margin: 1em 1em 0;
+	margin: 1em auto 0;
 	max-width: 75px;
 	z-index: 2;
 
 }
 [logo-link] {
+
+	display: block;
 
 	&:active {
 

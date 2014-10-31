@@ -321,12 +321,14 @@ header {
 
 [logo] {
   display: block;
-  margin: 1em 1em 0;
+  margin: 1em auto 0;
   max-width: 75px;
   z-index: 2; }
 
-[logo-link]:active {
-  opacity: .5; }
+[logo-link] {
+  display: block; }
+  [logo-link]:active {
+    opacity: .5; }
 
 [role=main] {
   background: white;
@@ -479,6 +481,7 @@ nav {
   display: none !important; }
 
 #error {
+  clear: both;
   color: red;
   display: none;
   padding-top: 1em; }
@@ -674,7 +677,6 @@ small + p {
     display: block; } }
 @media screen and (min-width: 1301px) {
   [logo] {
-    margin-left: 2em;
     margin-top: 2em; }
 
   .wrap {
@@ -696,5 +698,9 @@ small + p {
       position: absolute;
       right: 3.5em;
       top: 3.5em; } }
+@media screen and (min-width: 1601px) {
+  .wrap {
+    max-width: 1500px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=app.css.map */
