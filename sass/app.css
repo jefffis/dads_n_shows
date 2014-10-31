@@ -472,7 +472,8 @@ nav {
 [footer] {
   font-size: .8em;
   margin-bottom: 0;
-  opacity: .5; }
+  opacity: .5;
+  text-align: center; }
 
 [m] {
   display: block !important; }
