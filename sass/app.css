@@ -441,6 +441,9 @@ nav {
     border-width: 3px; }
   [events] a {
     line-height: 1; }
+    [events] a em {
+      font-style: normal;
+      text-decoration: underline; }
     [events] a span {
       color: #999;
       display: block;
@@ -454,6 +457,9 @@ nav {
     border-width: 3px; }
   [home-events] a {
     line-height: 1; }
+    [home-events] a em {
+      font-style: normal;
+      text-decoration: underline; }
     [home-events] a span {
       color: #999;
       display: block;
@@ -543,6 +549,7 @@ small + p {
 
 [interstitial] {
   background: #fefebf;
+  display: none;
   margin-left: -1.5em;
   margin-right: -1.5em;
   padding: .75em 1em; }
@@ -610,7 +617,10 @@ small + p {
       display: inline-block; }
 
   [role=main] {
-    padding: 2.5em 0; } }
+    padding: 2.5em 0; }
+
+  [interstitial] {
+    display: block; } }
 @media screen and (min-width: 821px) {
   [m] {
     display: none !important; }
