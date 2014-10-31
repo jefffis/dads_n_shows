@@ -554,6 +554,9 @@ small + p {
   margin-right: -1.5em;
   padding: .75em 1em; }
 
+[show] {
+  display: block; }
+
 [mar-top] {
   margin-top: 1.5em; }
 
