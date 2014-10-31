@@ -4,7 +4,11 @@
 					<a href="#menu" class="btn">Menu</a>
 				</div>
 
+				{% if page.url == '/almost.html'%}
+				<h1 no>Almost done; check your inbox to confirm this!</h1>
+				{% else %}
 				<h1 no>Thanks for joining our li&rsquo;l group!</h1>
+				{% endif %}
 				<img class="lg" src="images/death-from-above-1979.jpg" alt="Death from Above 1979 is back together!!" />
 				<small>Featured: Death from Above 1979 visits DC on 12/1/14.<!-- <a href="" class="btn">See the events calendar</a>--></small>
 				
