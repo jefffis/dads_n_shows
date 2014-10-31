@@ -1,1 +1,5 @@
-<a href="/"><img src="/images/logo.svg" logo /></a>
+{% if page.url != '/index.html' %}
+<a href="/" logo-link><img src="/images/logo.svg" logo /></a>
+{% else %}
+<img src="/images/logo.svg" logo />
+{% endif %}

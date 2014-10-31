@@ -1,31 +1,12 @@
 <!doctype html>
 <html lang="en-us">
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		{% include headerbits-top.html %}
 		
 		<title dir="ltr">{{page.title}}</title>
 		
-		<link rel="shortcut icon" type="image/x-icon" href="" />
-
-		<script>
-			document.addEventListener("touchstart", function(){},false);
-		</script>
-
-		<meta name="fullcss" content="/stylesheets/app.min.css" />
-		<script>
-		document.addEventListener("touchstart", function() {},false);
-		/*! EnhanceJS: a progressive enhancement boilerplate. Copyright 2014 @scottjehl, Filament Group, Inc. Licensed MIT */
-		(function(j,e){j.enhance={};var o=j.document,d=o.documentElement,n=o.head||o.getElementsByTagName("head")[0],g="fullcss",m="fulljs",i="fonts",c=["enhanced"];function h(s){var r=j.document.getElementsByTagName("script")[0];var q=j.document.createElement("script");q.src=s;r.parentNode.insertBefore(q,r);return q}enhance.loadJS=h;function f(q,t,u){var r=j.document.createElement("link");var s=t||j.document.getElementsByTagName("script")[0];r.rel="stylesheet";r.href=q;r.media="only x";s.parentNode.insertBefore(r,s);setTimeout(function(){r.media=u||"all"});return r}enhance.loadCSS=f;function p(q){var t=j.document.getElementsByTagName("meta");var s;for(var r=0;r<t.length;r++){if(t[r].name&&t[r].name===q){s=t[r];break}}return s}enhance.getMeta=p;function b(s,u,w){if(u===e){var v="; "+j.document.cookie;var t=v.split("; "+s+"=");if(t.length==2){return t.pop().split(";").shift()}return null}else{if(u===false){w=-1}if(w){var r=new Date();r.setTime(r.getTime()+(w*24*60*60*1000));var q="; expires="+r.toGMTString()}else{var q=""}j.document.cookie=s+"="+u+q+"; path=/"}}enhance.cookie=b;var k=p(g);if(k&&!b(g)){f(k.content);b(g,"true",7)}if(!("querySelector" in o)){return}d.className+=" "+c.join(" ");var a=p(m);if(a){h(a.content)}var l=p(i);if(l){f(l.content)}}(this));
-		</script>
-		<!--#if expr="$HTTP_COOKIE=/fullcss\=true/" -->
-		<link href="/stylesheets/app.min.css" rel="stylesheet" type="text/css" />
-		<!--#else -->
-		<noscript>
-			<link href="/stylesheets/app.min.css" rel="stylesheet" type="text/css" />
-		</noscript>
-		<!--#endif -->
+		{% include headerbits-bot.html %}
 
 	</head>
 	<body>

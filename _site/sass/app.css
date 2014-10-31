@@ -324,8 +324,9 @@ header {
   margin: 1em 1em 0;
   max-width: 75px;
   z-index: 2; }
-  [logo]:active {
-    opacity: .5; }
+
+[logo-link]:active {
+  opacity: .5; }
 
 [role=main] {
   background: white;
