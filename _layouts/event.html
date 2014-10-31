@@ -24,19 +24,27 @@
 				</div>
 
 				<h1 data-sub="{{page.num}} dads going.">{{page.title}}</h1>
-				<img class="lg" src="/images/death-from-above-1979.jpg" alt="Death from Above 1979 is back together!!" />
-				<small>Featured: Death from Above 1979 visits DC on 12/1/14.<!-- <a href="" class="btn">See the events calendar</a>--></small>
+				{% if page.event_img %}
+				<img class="lg trans" src="/images/space.png" />
+				{% else %}
+				<img class="lg" src="{{site.featured_img}}" alt="{{site.featured_alt}}" />
+				<small>{{site.featured_info}}</small>
+				{% endif %}
 				
 			</header>
 
 			<div role="main">
 				<div class="width">
 
+					{% if page.interstitial %}
 					{% include interstitial.html %}
+					{% endif %}
 
 					{{ content }}
 
+					{% if page.interstitial %}
 					{% include interstitialb.html %}
+					{% endif %}
 
 					<hr />
 

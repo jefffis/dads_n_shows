@@ -5,6 +5,7 @@ where: 930 Club
 when: December 1st, 2014
 time: 7pm
 num: 15
+interstitial: true
 tix_url: http://www.930.com/event/623185-death-from-above-1979-washington/
 album_url: ##
 headline: F*ck yes, they're back.
