@@ -478,6 +478,13 @@ nav {
 [t], [d] {
   display: none !important; }
 
+#error {
+  color: red;
+  display: none;
+  padding-top: 1em; }
+  #error.show {
+    display: block; }
+
 h1, h2, h3, h4, p {
   font-weight: normal;
   margin: 0 0 25px; }

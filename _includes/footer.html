@@ -25,3 +25,36 @@
 					</nav>
 
 					<h3 footer>&copy; 2014, a jefff.co project</h3>
+
+					{% if page.url == '/index.html' %}
+					<script>
+
+						function validateEmail(email) { 
+							var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							return re.test(email);
+						}
+
+						var submit = document.getElementById('submit');
+						var email = document.getElementById('mce-EMAIL');
+						var error = document.getElementById('error');
+
+						email.onblur = function(){
+							if(validateEmail(this.value)){
+								error.className = '';
+							}else{
+								error.className = 'show';
+							}
+						}
+
+						submit.onclick = function(){
+							if(validateEmail(email.value)){
+								error.className = '';
+								return true;
+							}else{
+								error.className = 'show';
+								return false;
+							}
+						}
+
+					</script>
+					{% endif %}
