@@ -479,6 +479,7 @@ nav {
   display: none !important; }
 
 #error {
+  clear: both;
   color: red;
   display: none;
   padding-top: 1em; }
