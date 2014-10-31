@@ -438,8 +438,7 @@ nav {
       border-top: 1px solid #efefef; }
 
 [events] {
-  font-size: 2em;
-  margin-bottom: 0; }
+  font-size: 2em; }
   [events] span + span {
     border-width: 3px; }
   [events] a {
@@ -454,8 +453,7 @@ nav {
       padding-top: .5em; }
 
 [home-events] {
-  font-size: 2em;
-  margin-bottom: 0; }
+  font-size: 2em; }
   [home-events] span + span {
     border-width: 3px; }
   [home-events] a {

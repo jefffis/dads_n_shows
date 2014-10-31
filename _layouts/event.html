@@ -19,7 +19,9 @@
 
 				<div menu right class="multi">
 					<a href="#menu" class="btn">Menu</a>
+					{% if page.tix_url %}
 					<a href="{{page.tix_url}}" class="btn">Get tix</a>
+					{% endif %}
 					<a href="mailto:dads.n.shows@gmail.com" class="btn">RSVP</a>
 				</div>
 
