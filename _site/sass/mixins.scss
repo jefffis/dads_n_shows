@@ -42,6 +42,14 @@
 	transition: $prop $time $type;
 }
 
+// user-select
+@mixin user-select($prop) {
+	-moz-user-select: $prop;
+	-webkit-user-select: $prop;
+	-ms-user-select: $prop;
+	user-select: $prop;
+}
+
 // filter
 @mixin filter($type,$amt) {
 	-webkit-filter: $type+unquote('(#{$amt})');

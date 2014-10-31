@@ -634,7 +634,9 @@ small + p {
     padding: 0; }
 
   figure {
+    margin-bottom: 2.5em;
     margin-left: -50%;
+    margin-top: 2.5em;
     max-width: 200%;
     width: 200%; }
 
