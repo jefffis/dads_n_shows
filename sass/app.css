@@ -368,6 +368,9 @@ figure {
       -ms-border-radius: 0 3px 3px 0;
       border-radius: 0 3px 3px 0; }
 
+form {
+  margin-bottom: 25px; }
+
 form, fieldset {
   border: 0;
   padding: 0; }
