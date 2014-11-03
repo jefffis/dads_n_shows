@@ -168,17 +168,22 @@
 						email.onblur = function(){
 							if(validateEmail(this.value)){
 								error.className = '';
+								email.className = '';
 							}else{
 								error.className = 'show';
+								email.className = 'error';
 							}
 						}
 
 						submit.onclick = function(){
 							if(validateEmail(email.value)){
 								error.className = '';
+								email.className = '';
 								return true;
 							}else{
 								error.className = 'show';
+								email.className = 'error';
+								email.focus();
 								return false;
 							}
 						}

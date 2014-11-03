@@ -321,6 +321,20 @@ label {
 
 }
 
+.error {
+
+	border-color: red;
+
+	&:focus {
+
+		@extend .error;
+		outline: none;
+		@include box-shadow(0 0 5px rgba(255,0,0,0.75));
+
+	}
+
+}
+
 [micro] {
 
 	color: #999;
