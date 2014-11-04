@@ -15,6 +15,10 @@ img1: 1298414939headsup.png
 img2: death_from_above_1979_physical_world_0914.jpg
 img3: dfa1979.jpg?8946
 for: Dads
+track_embed: true
+track: 4hGPrduIJx8598TETMUXGR
+track2_embed: true
+track2: 2NUt9bsznnA4ISWN3nfSKV
 ---
 
 In 2010, with a decade-long divide, Jesse and Sebastien met again, not unlike the first time. Their reunion was sparked by an overwhelming demand from an un-satiated public to see this force of humanity perform. In 2011, the narrative resumed with a year-long reunion tour that cemented not only their place in the current cultural landscape, but also their legend. The excitement of playing live again drove them to that old, Socratic Method that often leaves more questions than answers.

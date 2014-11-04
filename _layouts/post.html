@@ -11,6 +11,17 @@ layout: event
 	<img src="/images/bands/{{page.folder}}/{{page.img3}}" />
 </figure>
 
+{% if page.track_embed %}
+
+{% endif %}
+<small trns>Check out <a href="#track">my favorite tunes</a> of theirs; or read some info on &rsquo;em.</small>
 {{content}}
+
+{% if page.track_embed %}
+<iframe src="https://embed.spotify.com/?uri=spotify:track:{{page.track}}"height="380" frameborder="0" allowtransparency="true" id="track"></iframe>
+{% if page.track2_embed %}
+<iframe src="https://embed.spotify.com/?uri=spotify:track:{{page.track2}}"height="380" frameborder="0" allowtransparency="true"></iframe>
+{% endif %}
+{% endif %}
 
 <small trns>Content from: <a href="{{page.content_from}}" target="_blank">{{page.content_from}}</a></small>

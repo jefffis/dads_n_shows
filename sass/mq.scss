@@ -128,6 +128,22 @@
 
 	}
 
+	iframe {
+
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 48%;
+
+		& + iframe {
+
+			float: right;
+
+		}
+
+	}
+
 }
 
 @media screen and (min-width: 821px){

@@ -499,6 +499,11 @@ nav {
   #error.show {
     display: block; }
 
+iframe {
+  display: block;
+  margin: 0 auto 25px;
+  max-width: 300px; }
+
 h1, h2, h3, h4, p {
   font-weight: normal;
   margin: 0 0 25px; }
@@ -645,7 +650,16 @@ small + p {
     padding: 2.5em 0; }
 
   [interstitial] {
-    display: block; } }
+    display: block; }
+
+  iframe {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 48%; }
+    iframe + iframe {
+      float: right; } }
 @media screen and (min-width: 821px) {
   [m] {
     display: none !important; }
