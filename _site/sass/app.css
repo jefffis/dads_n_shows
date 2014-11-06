@@ -321,7 +321,7 @@ header {
 
 [logo] {
   display: block;
-  margin: 1em auto 0;
+  margin: 2em auto 1em;
   max-width: 150px;
   z-index: 2; }
 
@@ -702,7 +702,7 @@ small + p {
     display: block; } }
 @media screen and (min-width: 1301px) {
   [logo] {
-    margin-top: 2em; }
+    margin-bottom: 0; }
 
   .wrap {
     padding: 2em; }
