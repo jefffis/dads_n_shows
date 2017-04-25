@@ -5,7 +5,7 @@ layout: events
 					<nav events>
 						{% for post in site.posts %}
 						<span>
-							<a href="{{post.url}}">
+							<a href="{{site.root_url}}{{post.url}}">
 								<em>{{post.title}}</em>
 								<span>
 									{{post.when}} at {{post.where}}; for {{post.for}}
