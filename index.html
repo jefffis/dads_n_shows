@@ -10,7 +10,7 @@ layout: default
 
 					<!--<a href="#" class="btn">Join our group now</a>-->
 
-					<form action="//jefff.us5.list-manage.com/subscribe/post?u=04a55f946b24b93da6e1e6fbe&amp;id=a50f1762bd" id="join" name="mc-embedded-subscribe-form" class="validate" method="post" target="_blank">
+					<!-- <form action="//jefff.us5.list-manage.com/subscribe/post?u=04a55f946b24b93da6e1e6fbe&amp;id=a50f1762bd" id="join" name="mc-embedded-subscribe-form" class="validate" method="post" target="_blank">
 						<fieldset>
 							<label for="mce-FNAME">
 								<span>Your name</span>
@@ -24,7 +24,7 @@ layout: default
 							<input type="submit" value="Join us today" id="submit" class="btn" />
 						</fieldset>
 						<small micro>We use MailChimp to send announcements and updates, but you can unsubscribe (i.e. leave the group) at any time.</small>
-					</form>
+					</form> -->
 
 					<p>At the begginning of each month, we&rsquo;ll send out an update on what&rsquo;s coming down the pipe for that month. But, don&rsquo;t hesitate to <a href="mailto:dads.n.shows@gmail.com">suggest an alternate event, or send feedback</a> about the events.</p>
 					<p>We&rsquo;ll also send out an update a day or two before each event confirming some details and whatnot, so be sure to add <strong>dads.n.shows@gmail.com</strong> to your address book so you always get them!</p>
@@ -46,7 +46,7 @@ layout: default
 					<nav home-events>
 						{% for post in site.posts %}
 						<span>
-							<a href="{{post.url}}">
+							<a href="{{site.root_url}}{{post.url}}">
 								<em>{{post.title}}</em>
 								<span>
 									{{post.when}} at {{post.where}}; for {{post.for}}
