@@ -1,5 +1,5 @@
 {% if page.url != '/index.html' %}
-<a href="/" logo-link><img src="/images/text-logo.png" alt="Dads'n'Shows logo" logo /></a>
+<a href="{{site.root_url}}" logo-link><img src="{{site.root_url}}images/text-logo.png" alt="Dads'n'Shows logo" logo /></a>
 {% else %}
-<img src="/images/text-logo.png" alt="Dads'n'Shows logo" logo />
+<img src="{{site.root_url}}images/text-logo.png" alt="Dads'n'Shows logo" logo />
 {% endif %}

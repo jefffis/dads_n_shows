@@ -2,7 +2,7 @@
 					<nav id="menu">
 						{% unless page.layout == 'events' %}
 						<span>
-							<a href="/events.html">View all events</a>
+							<a href="{{site.root_url}}events.html">View all events</a>
 						</span>
 						{% endunless %}
 						<!--<span>
@@ -19,7 +19,7 @@
 						</span>-->
 						{% unless page.layout == 'default' %}
 						<span>
-							<a href="/">Head home</a>
+							<a href="{{site.root_url}}">Head home</a>
 						</span>
 						{% endunless %}
 						<span>

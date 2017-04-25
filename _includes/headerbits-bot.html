@@ -6,7 +6,7 @@
 			document.addEventListener("touchstart", function(){},false);
 		</script>
 
-		<meta name="fullcss" content="/stylesheets/app.min.css" />
+		<meta name="fullcss" content="{{site.root_url}}stylesheets/app.min.css" />
 		<script>
 		document.addEventListener("touchstart", function() {},false);
 		/*! EnhanceJS: a progressive enhancement boilerplate. Copyright 2014 @scottjehl, Filament Group, Inc. Licensed MIT */
@@ -20,9 +20,9 @@
 		ga('send', 'pageview');
 		</script>
 		<!--#if expr="$HTTP_COOKIE=/fullcss\=true/" -->
-		<link href="/stylesheets/app.min.css" rel="stylesheet" type="text/css" />
+		<link href="{{site.root_url}}stylesheets/app.min.css" rel="stylesheet" type="text/css" />
 		<!--#else -->
 		<noscript>
-			<link href="/stylesheets/app.min.css" rel="stylesheet" type="text/css" />
+			<link href="{{site.root_url}}stylesheets/app.min.css" rel="stylesheet" type="text/css" />
 		</noscript>
 		<!--#endif -->
